@@ -1,0 +1,51 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        h2{
+            margin-top: 155px;
+            font-size: 50px;
+            font-family: "Bookman Old Style";
+        }
+        
+        h1{
+           font-size: 60px;
+           font-family: "Bookman Old Style";
+            
+        }
+        
+        input[type=submit]{
+           background-color: aquamarine;
+            box-shadow: midnightblue;
+            color: midnightblue;
+            border-radius: 10px;
+            font-family: "courier-new";
+            font-size: 25px;
+            cursor: pointer;
+            padding: 15px 35px;
+            
+        }
+        body{
+            background-image:url("{%static 'houses.jpg'%}");
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+        }
+    </style>
+</head>
+<body style="text-align:center">
+    <h2>Welcome....!</h2>
+    <h1>California House Price Prediction</h1>
+    <form action="predict">
+        <input type="submit" value="START">
+        
+    </form>
+    
+
+</body>
+</html>

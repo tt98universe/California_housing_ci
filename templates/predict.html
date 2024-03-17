@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        body{
+            background-image: url("{% static 'background.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main{
+            position:fixed;
+            top:120px;
+            left:410px;
+            width:700px;
+            background-color:lightblue;
+            align-items:center;
+            border-radius:5%;
+        }
+        div{
+            padding:15px;
+        }
+        input[type=submit]{
+            --bs-btn-hover-border-color:darkgrey;
+            border-radius: 10px;
+            
+            background-color:Black;
+            color:white;
+            font-family: "Bookman Old Style";
+            cursor:pointer;
+            padding: 16px 32px;
+        }
+        h1{
+            font-size:40px;
+        }
+        h2{
+            font-size:30px;
+            color:DarkRed;
+        }
+       
+    </style>
+</head>
+<body style="text-align: center">
+    <div class="main">
+        <h1>Enter the values below:</h1>
+        <form action="result">
+            <div class="row">
+                <div class="col-sm-4" style="background-color: lightskyblue">
+                    <p>Housing Median Income</p>
+                    <input type="text" name="n1">
+                    
+                </div>
+                <div class="col-sm-4" style="background-color: lightgreen">
+                    <p>Housing Median Age</p>
+                    <input type="text" name="n2">
+                    
+                
+                </div>
+                <div class="col-sm-4" style="background-color: lightgrey">
+                    <p>Number of rooms</p>
+                    <input type="text" name="n3">
+                    
+                
+                </div>
+                <div class="row">
+                    <div class="col-sm-4" style="background-color: lightyellow">
+                    <p>Number of Bedrooms</p>
+                    <input type="text" name="n4">
+                    
+                
+                </div>
+                    <div class="row">
+                    <div class="col-sm-4" style="background-color: plum">
+                    <p>Population</p>
+                    <input type="text" name="n5">
+                    
+                    </div>
+                        
+                        
+                    
+                    <div class="col-sm-4" style="background-color: orange">
+                    <p>Households</p>
+                    <input type="text" name="n6">
+                    
+                
+                    </div>
+                        <div class="row">
+                    <div class="col-sm-4" style="background-color: burlywood">
+                    <p>Longitude</p>
+                    <input type="text" name="n7">
+                    
+                
+                    </div>
+                            
+                    <div class="col-sm-4" style="background-color: dimgrey">
+                    <p>Latitude</p>
+                    <input type="text" name="n8">
+                    
+                
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="PREDICT">
+                        </div>
+                        
+                        
+        </form>  
+        <div class="row">
+            <h2>{{result2}}</h2>
+        </div>
+    </div>
+
+</body>
+</html>
