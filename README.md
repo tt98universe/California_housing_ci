@@ -6,4 +6,4 @@ C:\users\USER\PycharmProjects\California-housing-ci
 
 Application Run- type the below command in the PyCharm terminal -->
 
-		python manage.py runserver, and the application will open in the server.
+		python manage.py runserver
